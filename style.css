@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f6f9;
+    padding: 20px;
+}
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin-right: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+}
+nav ul li:hover {
+    color: #007bff;
+}
+.icons {
+    display: flex;
+    align-items: center;
+}
+.icon {
+    position: relative;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.icon i {
+    font-size: 1.5rem;
+    color: #333;
+}
+.icon .badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    padding: 3px 6px;
+}
+.main-content {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.dashboard-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #333;
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.card {
+    width: 22%;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    object-fit: cover;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    padding-left: 0;
+    border-bottom: 1px solid #e0e0e0;
+    display: block;
+}
+.card h3 {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 1.1rem;
+    margin-left:15px ;
+}
+.card .value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left:15px ;
+}
+.increase {
+    color: green;
+    font-size: x-small;
+}
+.decrease {
+    color: red;
+    font-size: x-small;
+}
+.content-grid {
+    display: flex;
+    justify-content: space-between;
+}
+.chart-card {
+    width: 68%;
+    height: auto; /* Set height to auto to adjust based on content */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    margin-bottom: 20px;
+}
+
+.chart-card img {
+    width: 100%; /* Image covers the entire width of the chart card */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Makes sure the image fills the container without stretching */
+    border-radius: 10px; /* Optional: Keep the card's rounded corners */
+    margin-bottom: 20px; /* Add some space between the image and text */
+}
+
+.chart-card > div {
+    margin-bottom: 20px; /* Allow the content to take the remaining space */
+    justify-content: space-between;
+}
+.mrr-content {
+    display: flex; /* Display sections in a row */
+    justify-content: space-between; /* Space between sections */
+}
+.mrr-growth, .mrr-section {
+    width: 48%; /* Adjust width to fit side by side */
+    margin-right: 20px;
+}
+
+.mrr-section h3 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+.mrr-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.mrr-description {
+    font-size: 0.9rem;
+    color: #999;
+}
+.mrr-description a {
+    color: #007bff;
+    text-decoration: none;
+}
+.mrr-description a:hover {
+    text-decoration: underline;
+}
+.retention-card {
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    height: fit-content;
+}
+
+.retention-card h3 {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.expansions .val {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.retention-card .cancellations .val{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.retention-card img{
+    width: 100%;
+    height: auto;
+}
+.retention-card .expansions .blue{
+    color: blue;
+}
+.retention-card .red{
+    color: red;
+}
+.formate{
+    display: flex;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .icons {
+        margin-top: 20px;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .content-grid {
+        flex-direction: column;
+    }
+    .chart-card,.retention-card {
+        width: 100%;
+    }
+    .mrr-growth, .mrr-section {
+        width: 100%;
+    }
+    .formate {
+        flex-direction: column;
+    }
+    .btn {
+        font-size: x-small;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .dashboard-title{
+        display:flex;
+    }
+}
+/* Small Mobile (width up to 480px) */
+@media (max-width: 480px) {
+    .dashboard-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .breadcrumb {
+        margin-bottom: 10px;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    .chart-card, .retention-card {
+        padding: 15px;
+    }
+    .card h3 {
+        font-size: 1rem;
+    }
+    .card .value {
+        font-size: 1.3rem;
+    }
+}
